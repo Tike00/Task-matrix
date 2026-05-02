@@ -1,0 +1,220 @@
+:root {
+  --bg-page: #f3f7fb;
+  --bg-panel: rgba(255, 255, 255, 0.86);
+  --bg-panel-strong: #ffffff;
+  --bg-panel-dark: #0f172a;
+  --bg-soft: #eaf1f8;
+  --text-main: #10233b;
+  --text-soft: #5c728d;
+  --text-muted: #7e94ad;
+  --line-main: rgba(119, 147, 178, 0.22);
+  --line-strong: rgba(39, 111, 193, 0.18);
+  --primary: #1273ea;
+  --primary-strong: #004fbb;
+  --accent: #06b6d4;
+  --success: #119c73;
+  --warning: #ef8f1c;
+  --danger: #da4f68;
+  --radius-xl: 28px;
+  --radius-lg: 22px;
+  --radius-md: 16px;
+  --radius-sm: 12px;
+  --shadow-lg: 0 24px 60px rgba(16, 35, 59, 0.12);
+  --shadow-md: 0 14px 36px rgba(16, 35, 59, 0.08);
+  --shadow-sm: 0 8px 20px rgba(16, 35, 59, 0.06);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  font-family:
+    "Segoe UI Variable Display",
+    Bahnschrift,
+    "Trebuchet MS",
+    "Segoe UI",
+    sans-serif;
+  color: var(--text-main);
+}
+
+body {
+  background:
+    radial-gradient(circle at 8% 12%, rgba(6, 182, 212, 0.14), transparent 22%),
+    radial-gradient(circle at 92% 10%, rgba(18, 115, 234, 0.14), transparent 24%),
+    linear-gradient(180deg, #f7fbff 0%, #eef4fa 100%);
+  position: relative;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(18, 115, 234, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(18, 115, 234, 0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+  mask-image: linear-gradient(180deg, rgba(0, 0, 0, 0.45), transparent 78%);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+pre {
+  margin: 0;
+}
+
+.el-card,
+.argon-card {
+  border: 1px solid var(--line-main) !important;
+  border-radius: var(--radius-lg) !important;
+  background: var(--bg-panel) !important;
+  box-shadow: var(--shadow-md) !important;
+  backdrop-filter: blur(16px);
+}
+
+.el-card__header {
+  border-bottom: 1px solid var(--line-main) !important;
+  padding: 18px 22px !important;
+}
+
+.el-card__body {
+  padding: 22px !important;
+}
+
+.el-button {
+  border-radius: 999px !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.02em;
+  box-shadow: none !important;
+}
+
+.el-button--primary {
+  border: none !important;
+  background: linear-gradient(135deg, var(--primary), var(--accent)) !important;
+}
+
+.el-button:not(.el-button--primary) {
+  border-color: rgba(18, 115, 234, 0.18) !important;
+  background: rgba(255, 255, 255, 0.72) !important;
+  color: var(--text-main) !important;
+}
+
+.el-input__wrapper,
+.el-select__wrapper,
+.el-textarea__inner,
+.el-input-number .el-input__wrapper {
+  border-radius: var(--radius-sm) !important;
+  box-shadow: inset 0 0 0 1px rgba(131, 154, 179, 0.34) !important;
+  background: rgba(255, 255, 255, 0.92) !important;
+}
+
+.el-input__wrapper.is-focus,
+.el-select__wrapper.is-focused,
+.el-textarea__inner:focus {
+  box-shadow: inset 0 0 0 1px rgba(18, 115, 234, 0.68) !important;
+}
+
+.el-input__inner,
+.el-textarea__inner {
+  color: var(--text-main) !important;
+}
+
+.el-table {
+  border-radius: var(--radius-md) !important;
+  overflow: hidden !important;
+  box-shadow: inset 0 0 0 1px rgba(131, 154, 179, 0.16);
+}
+
+.el-table,
+.el-table th.el-table__cell,
+.el-table tr,
+.el-table td.el-table__cell {
+  --el-table-bg-color: rgba(255, 255, 255, 0.9);
+  --el-table-tr-bg-color: rgba(255, 255, 255, 0.88);
+  --el-table-header-bg-color: rgba(233, 242, 251, 0.85);
+  --el-table-border-color: rgba(131, 154, 179, 0.16);
+  --el-table-text-color: var(--text-main);
+  --el-table-header-text-color: var(--text-soft);
+}
+
+.el-tag {
+  border-radius: 999px !important;
+  font-weight: 700 !important;
+}
+
+.el-menu {
+  border-right: none !important;
+  background: transparent !important;
+}
+
+.el-menu-item {
+  height: 48px !important;
+  line-height: 48px !important;
+  border-radius: 16px !important;
+  margin: 6px 0 !important;
+}
+
+.el-menu-item:hover {
+  background: rgba(18, 115, 234, 0.08) !important;
+}
+
+.el-menu-item.is-active {
+  background: linear-gradient(135deg, rgba(18, 115, 234, 0.14), rgba(6, 182, 212, 0.16)) !important;
+  color: var(--text-main) !important;
+}
+
+.el-dialog {
+  border-radius: var(--radius-lg) !important;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.96) !important;
+}
+
+.el-dialog__header,
+.el-dialog__body,
+.el-dialog__footer {
+  padding-left: 24px !important;
+  padding-right: 24px !important;
+}
+
+.terminal-block {
+  background:
+    linear-gradient(180deg, rgba(15, 23, 42, 0.98), rgba(15, 23, 42, 0.94));
+  color: #d7e7f9;
+  border-radius: 18px;
+  padding: 16px 18px;
+  box-shadow: inset 0 0 0 1px rgba(86, 146, 221, 0.14);
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.panel-title {
+  font-size: 16px;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.drag-ghost {
+  opacity: 0.55;
+  transform: rotate(1deg) scale(0.98);
+}
+
+.drag-highlight {
+  border-color: rgba(18, 115, 234, 0.62) !important;
+  background: rgba(18, 115, 234, 0.1) !important;
+  box-shadow: 0 0 0 4px rgba(18, 115, 234, 0.08) !important;
+}
+
+@media (max-width: 1024px) {
+  body::before {
+    background-size: 24px 24px;
+  }
+}

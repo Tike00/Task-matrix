@@ -1,0 +1,56 @@
+<svg width="960" height="260" viewBox="0 0 960 260" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Task Matrix logo</title>
+  <desc id="desc">A matrix grid icon with connected execution nodes and the Task Matrix wordmark.</desc>
+  <defs>
+    <linearGradient id="icon-bg" x1="42" y1="42" x2="218" y2="218" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1273EA"/>
+      <stop offset="0.55" stop-color="#06B6D4"/>
+      <stop offset="1" stop-color="#14B8A6"/>
+    </linearGradient>
+    <linearGradient id="node-active" x1="82" y1="78" x2="180" y2="178" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#DDF9FF"/>
+    </linearGradient>
+    <filter id="soft-shadow" x="12" y="18" width="236" height="236" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+      <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+      <feOffset dy="8"/>
+      <feGaussianBlur stdDeviation="16"/>
+      <feComposite in2="hardAlpha" operator="out"/>
+      <feColorMatrix type="matrix" values="0 0 0 0 0.015 0 0 0 0 0.184 0 0 0 0 0.337 0 0 0 0.2 0"/>
+      <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow"/>
+      <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow" result="shape"/>
+    </filter>
+  </defs>
+
+  <rect x="16" y="16" width="928" height="228" rx="48" fill="#F8FAFC"/>
+  <rect x="17" y="17" width="926" height="226" rx="47" stroke="#E2E8F0" stroke-width="2"/>
+
+  <g filter="url(#soft-shadow)">
+    <rect x="42" y="42" width="176" height="176" rx="38" fill="url(#icon-bg)"/>
+    <rect x="54" y="54" width="152" height="152" rx="30" stroke="white" stroke-opacity="0.26" stroke-width="2"/>
+
+    <path d="M88 88H172V172H88V88Z" stroke="white" stroke-opacity="0.24" stroke-width="3"/>
+    <path d="M88 130H172" stroke="white" stroke-opacity="0.22" stroke-width="3"/>
+    <path d="M130 88V172" stroke="white" stroke-opacity="0.22" stroke-width="3"/>
+    <path d="M91 91L130 130L170 92" stroke="white" stroke-opacity="0.82" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M130 130L170 170" stroke="white" stroke-opacity="0.82" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+    <circle cx="88" cy="88" r="13" fill="url(#node-active)"/>
+    <circle cx="130" cy="130" r="13" fill="url(#node-active)"/>
+    <circle cx="172" cy="88" r="13" fill="url(#node-active)"/>
+    <circle cx="172" cy="172" r="13" fill="url(#node-active)"/>
+    <circle cx="88" cy="172" r="9" fill="white" fill-opacity="0.42"/>
+    <circle cx="130" cy="88" r="9" fill="white" fill-opacity="0.42"/>
+    <circle cx="88" cy="130" r="9" fill="white" fill-opacity="0.42"/>
+    <circle cx="172" cy="130" r="9" fill="white" fill-opacity="0.42"/>
+    <circle cx="130" cy="172" r="9" fill="white" fill-opacity="0.42"/>
+  </g>
+
+  <g>
+    <text x="278" y="116" fill="#0F172A" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="62" font-weight="800" letter-spacing="0">Task Matrix</text>
+    <text x="282" y="158" fill="#475569" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="2.8">LOCAL EXECUTION CONSOLE</text>
+    <path d="M282 184H702" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round"/>
+    <path d="M282 184H442" stroke="#06B6D4" stroke-width="4" stroke-linecap="round"/>
+  </g>
+</svg>
