@@ -1,0 +1,17 @@
+{
+  "name": "local-task-platform",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local single-machine task management platform",
+  "scripts": {
+    "install:all": "npm install --prefix server && npm install --prefix client",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "start:server": "npm run start --prefix server",
+    "build:client": "npm run build --prefix client",
+    "db:init": "npm run db:init --prefix server",
+    "db:migrate": "npm run db:migrate --prefix server",
+    "db:reset": "npm run db:reset --prefix server",
+    "db:check": "npm run db:check --prefix server"
+  }
+}
